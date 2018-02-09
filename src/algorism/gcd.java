@@ -1,13 +1,15 @@
 package algorism;
 import java.util.Arrays;
-
+//내가 짠 것
+//최대공약수는 두수를 나우었을때 떨어지는 숫자중 가장 큰것이 최대공약수
+//최소 공배수 구하는 것은 이런식 말고  두수 a*b/최대공약수  이렇게도 구할수 있다...다풀어보고 알았다능....
 class TryHelloWorld {
     public int[] gcdlcm(int a, int b) {
         int[] answer = new int[2];
                 int x =1;
                 int y=1;
                 int max = 1;
-                int min= Math.min(a,b);
+                int min= Math.min(a,b); //이부분을  삼항연산자로 할수도 있음   (a>b)?a:b; 이런식으로 
         for(int i=2; i<min; i++) {
                     if(a%i ==0 && b% i ==0) {
                         max = i;
