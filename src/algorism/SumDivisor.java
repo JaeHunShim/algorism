@@ -1,20 +1,20 @@
 package algorism;
 
-public class SumDivisor {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int number = 12;
-		int sum =0;
-		
-		for(int i =number; i >0; i--) {
-			if(number % i == 0) {
-				System.out.println(number/i);
-				sum = sum+(number/i);
-				System.out.println(sum);
-			}
-		}
-		
+class SumDivisor {
+	public int sumDivisor(int num) {
+		int answer = 0;
+		for(int i = num; i > 0; i--){
+    	if(num % i ==0){
+      	answer = answer+(num/i);
+      }
+    }
+		return answer;
 	}
 
+	// 아래는 테스트로 출력해 보기 위한 코드입니다.
+	public static void main(String[] args) {
+		SumDivisor c = new SumDivisor();
+		System.out.println(c.sumDivisor(12));
+	}
 }
+
