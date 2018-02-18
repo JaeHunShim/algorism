@@ -3,7 +3,7 @@ import java.util.Arrays;
 //내가 짠 것
 //최대공약수는 두수를 나우었을때 떨어지는 숫자중 가장 큰것이 최대공약수
 //최소 공배수 구하는 것은 이런식 말고  두수 a*b/최대공약수  이렇게도 구할수 있다...다풀어보고 알았다능....
-class TryHelloWorld {
+class gcd {
     public int[] gcdlcm(int a, int b) {
         int[] answer = new int[2];
                 int x =1;
@@ -36,7 +36,7 @@ class TryHelloWorld {
 
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
-        TryHelloWorld c = new TryHelloWorld();
+        gcd c= new gcd();
         System.out.println(Arrays.toString(c.gcdlcm(3, 12)));
     }
 }
