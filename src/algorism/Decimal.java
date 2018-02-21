@@ -9,11 +9,8 @@ package algorism;
 10을 입력받았다면, 1부터 10 사이의 소수는 [2,3,5,7] 4개가 존재하므로 4를 반환
 5를 입력받았다면, 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환
 */
-public class Decimal {
-
-	public static void main(String[] args) {
-	
-		int num =5;
+class Decimal {
+	int numberOfPrime(int num) {
 		boolean result;
 		int count =0;
 		for(int i=2; i<=num; i++) {
@@ -28,6 +25,12 @@ public class Decimal {
 				count = count+1;
 			}
 		}
-		System.out.println(count);
+		return count;
 	}
+
+	public static void main(String[] args) {
+		Decimal prime = new Decimal();
+		System.out.println( prime.numberOfPrime(10) );
+	}
+
 }
