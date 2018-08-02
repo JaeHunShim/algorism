@@ -31,7 +31,7 @@ public class arry {
 				b[x][y] = random.nextInt(10)+1;
 			}
 			else {
-				i--;
+				i--; // 10개를 모두 채워야 하기때문에 다시 백~! 전치로 해도되지만 프로그램상 후치연산이 더 좋음 
 			}
 		}
 		
